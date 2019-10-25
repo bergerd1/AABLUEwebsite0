@@ -1,0 +1,425 @@
+/*
+Theme Name: AA Blueprint
+Description: Custom WordPress theme for AA Blueprint
+Author: Kevin Wirth
+Version: 1.3
+*/
+
+@import url('css/reset.css');
+@import url('css/base.css');
+@import url('css/core.css');
+@import url('css/layout.css');
+
+
+/* Home
+*****************************************************************************************/
+
+/* Slider: Slide Wrapper */
+.content-wrapper.slider .slider-wrapper { position: relative;  }
+/* Slider: Nivo Slider */
+.content-wrapper.slider .nivoSlider { width: 100%; height: auto; display: block; }
+/* Slider: Image */
+.content-wrapper.slider img { width: 100%; height: auto; display: block; }
+/* Slider: Control Navigation */
+.content-wrapper.slider .nivo-controlNav { width: 100%; display: block; position: absolute; bottom: 0; z-index: 1000; text-align: center; }
+/* Slider: Control */
+.content-wrapper.slider .nivo-control { width: 10px; height: 10px; display: inline-block; margin: 0 5px; overflow: hidden; text-indent: -999em; background: #fff; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+/* Slider: Control */
+.content-wrapper.slider .nivo-control.active { background: #666; }
+
+/* Feature Boxes */
+.content-wrapper.feature-boxes .feature-box { width: 95%; /* 304 (originally 304) / 320 */ height: 168px; border: 1px solid #ccc; display: block; margin: 6px auto 0; }
+/* Feature Boxes: Photo */
+.content-wrapper.feature-boxes .feature-box .photo { width: 48.684210526%; /* 148 (originally 148) / 304 */ height: 148px; display: block; margin: 15px 0 0 4px; float: left; }
+/* Feature Boxes: Feature One Photo */
+.content-wrapper.feature-boxes .feature-box.feature-one .photo { background: url('img/photo-print-services.jpg') 0 0 no-repeat; -moz-background-size: contain; -webkit-background-size: contain; background-size: contain; }
+/* Feature Boxes: Feature Two Photo */
+.content-wrapper.feature-boxes .feature-box.feature-two .photo { background: url('img/photo-equipment-sales.jpg') 0 0 no-repeat; -moz-background-size: contain; -webkit-background-size: contain; background-size: contain; }
+/* Feature Boxes: Title */
+.content-wrapper.feature-boxes .title { width: 47.368421053%; /* 144 (originally 144) / 304 */ display: block; margin: 40px 0 7px; float: right; font-size: 1.125em; /* 18px */ font-weight: bold; line-height: 1.21em; }
+/* Feature Boxes: Button */
+.content-wrapper.feature-boxes .button { width: 42.763157895%; /* 130 (originally 130) / 304 */ margin-right: 4.605263158%; /* 14 (originally 14) / 304 */ float: right; }
+/* Feature Boxes: Button: Arrow */
+.content-wrapper.feature-boxes .button .arrow { width: 9px; height: 16px; display: block; background: url('img/arrow-right-white.png') 0 0 no-repeat; -moz-background-size: contain; -webkit-background-size: contain; background-size: contain; position: absolute; top: 6px; right: 6px; opacity: 0; transition: opacity .25s ease-in-out; -moz-transition: opacity .25s ease-in-out; -webkit-transition: opacity .25s ease-in-out; }
+/* Feature Boxes: Button Hover: Arrow */
+.content-wrapper.feature-boxes .button:hover .arrow { opacity: 1; }
+
+/* Way Finding */
+.content-wrapper.way-finding { margin-bottom: 6px; }
+/* Way Finding: Way Box */
+.content-wrapper.way-finding .way-box { width: 95.625%; /* 306 (originally 306) / 320 */ height: 107px; padding-top: 15px; display: block; margin: 6px auto 0; text-align: center; color: #fff; }
+/* Way Finding: Way Box One */
+.content-wrapper.way-finding .way-box.way-one   { background: #76b3e2; }
+/* Way Finding: Way Box Two */
+.content-wrapper.way-finding .way-box.way-two   { background: #999; }
+/* Way Finding: Way Box Three */
+.content-wrapper.way-finding .way-box.way-three { background: #00579c; }
+/* Way Finding: Way Box: Title */
+.content-wrapper.way-finding .way-box .title { margin-bottom: 8px; font-size: 1.625em; /* 26px */ line-height: 1.34em; }
+/* Way Finding: Way Box: Arrow */
+.content-wrapper.way-finding .way-box .arrow { width: 46px; height: 19px; display: block; margin: 0 auto; background: url('img/arrow-down-white.png') 0 0 no-repeat; -moz-background-size: contain; -webkit-background-size: contain; background-size: contain; }
+
+
+@media only screen and (min-width : 1024px) {
+
+	/* Home
+	*****************************************************************************************/
+	
+	/* Slider: Control */
+	.content-wrapper.slider .nivo-control { width: 20px; height: 20px; margin: 0 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+	
+	/* Feature Boxes */
+	.content-wrapper.feature-boxes { margin: 11px 0 0; overflow: hidden; }
+	/* Feature Boxes */
+	.content-wrapper.feature-boxes .feature-box { width: 49.292256453%; /* 592 (originally 592) / 1201 */ height: 330px; border-width: 2px; margin: 0; }
+	/* Feature Boxes: Photo */
+	.content-wrapper.feature-boxes .feature-box.feature-one .photo { width: 53.040540541%; /* 314 (originally 314) / 592 */ display: block; }
+	/* Feature Boxes: Feature One */
+	.content-wrapper.feature-boxes .feature-box.feature-one { float: left; }
+	/* Feature Boxes: Feature One: Photo */
+	.content-wrapper.feature-boxes .feature-box.feature-one .photo { height: 315px; margin: 3px 0 0; }
+	/* Feature Boxes: Feature Two */
+	.content-wrapper.feature-boxes .feature-box.feature-two { float: right; }
+	/* Feature Boxes: Feature Two: Photo */
+	.content-wrapper.feature-boxes .feature-box.feature-two .photo { height: 252px; margin: 44px 0 0; }
+	/* Feature Boxes: Title */
+	.content-wrapper.feature-boxes .title { width: 43.074324324%; /* 255 (originally 255) / 592 */ margin: 77px 0 15px; font-size: 1.750em; /* 28px */ line-height: 1em; }
+	/* Feature Boxes: Button */
+	.content-wrapper.feature-boxes .button { width: 38.344594595%; /* 227 (originally 227) / 592 */ padding: 8px 0; font-size: 1.625em; /* 26px */ }
+	/* Feature Boxes: Button: Arrow */
+	.content-wrapper.feature-boxes .button .arrow { width: 15px; height: 27px; }
+	
+	/* Way Finding */
+	.content-wrapper.way-finding { margin: 11px 0 22px; overflow: hidden; }
+	/* Way Finding: Way Box */
+	.content-wrapper.way-finding .way-box { width: 32.556203164%; /* 391 (originally 391) / 1201 */ height: 255px; padding: 45px 0 0; margin: 0 1.165695254% /* 14 (originally 14) / 1201 */ 0 0; float: left; text-align: left; }
+	/* Way Finding: Way Box Three */
+	.content-wrapper.way-finding .way-box.way-three { margin-right: 0; }
+	/* Way Finding: Way Box: Title */
+	.content-wrapper.way-finding .way-box .title { width: 84.398976982%; /* 330 (originally 330) / 391 */ margin: 0 auto 17px; font-size: 2.375em; /* 38px */ line-height: 1.474em; }
+	/* Way Finding: Way Box: Arrow */
+	.content-wrapper.way-finding .way-box .arrow { width: 92px; height: 38px; }
+}
+
+
+/* Equipment Sales Brands
+*****************************************************************************************/
+
+/* Equipment Sales Brands: Page Title */
+.tax-brands .page-title,
+.single-equipment_sales .page-title { margin-bottom: 8px; background: url('img/background-equipment_sales-mobile.jpg') 0 0 no-repeat; }
+
+/* Equipment Sales Brands: Content Wrapper: Section */
+.tax-brands .content-wrapper.l-default .section,
+.single-equipment_sales .content-wrapper.l-default .section { padding: 8px 0 5px; border-bottom: 1px solid #ccc; }
+/* Equipment Sales Brands: Content Wrapper: Field Title */
+.tax-brands .content-wrapper.l-default .field-title,
+.single-equipment_sales .content-wrapper.l-default .field-title { margin-bottom: 0; }
+/* Equipment Sales Brands: Content Wrapper: Field Subtitle */
+.tax-brands .content-wrapper.l-default .field-subtitle,
+.single-equipment_sales .content-wrapper.l-default .field-subtitle { font-size: 0.938em; /* 15px */ }
+/* Equipment Sales Brands: Brochure */
+.tax-brands .field-brochure,
+.single-equipment_sales .field-brochure { height: 28px; width: 100%; padding: 5px 0 0 35px; display: block; margin: 0 0 10px 25px; background: url('img/icon-brochure-28x35.gif') 0 0 no-repeat; font-weight: bold; }
+
+/* Equipment Sales Brands: Content Wrapper: Button Wrapper: Button Desktop */
+.tax-brands .content-wrapper.l-default .button-wrapper .button-desktop,
+.single-equipment_sales .content-wrapper.l-default .button-wrapper .button-desktop { display: none; }
+/* Equipment Sales Brands: Page: Button Wrapper: Button */
+.tax-brands .content-wrapper.l-default .button-wrapper .button,
+.single-equipment_sales .content-wrapper.l-default .button-wrapper .button { width: 50%; }
+
+
+@media only screen and (min-width : 321px) {
+
+	/* Equipment Sales Brands
+	*****************************************************************************************/
+
+	/* Equipment Sales Brands: Page Title */
+	.tax-brands .page-title,
+	.single-equipment_sales .page-title { background: url('img/background-equipment_sales.jpg') 0 0 no-repeat; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover; }
+
+}
+
+
+@media only screen and (min-width : 1024px) {
+
+	/* Equipment Sales Brands
+	*****************************************************************************************/
+
+	/* Equipment Sales Brands: Content Wrapper: Section */
+	.tax-brands .content-wrapper.l-default .section,
+	.single-equipment_sales .content-wrapper.l-default .section { padding: 0; }
+	/* Equipment Sales Brands: Content Wrapper: Field Subtitle */
+	.tax-brands .content-wrapper.l-default .field-subtitle,
+	.single-equipment_sales .content-wrapper.l-default .field-subtitle { font-size: 1.250em; /* 20px */ }
+	/* Equipment Sales Brands: Brochure */
+	.tax-brands .field-brochure,
+	.single-equipment_sales .field-brochure { height: 37px; width: 100%; padding: 18px 0 0 55px; display: block; margin: 0 0 10px 0; background: url('img/icon-brochure-43x55.gif') 0 0 no-repeat; font-weight: bold; }
+	/* Equipment Sales Brands: Hover Brochure */
+	.tax-brands .field-brochure:hover,
+	.single-equipment_sales .field-brochure:hover { text-decoration: underline; }
+	
+	/* Equipment Sales Brands: Content Wrapper: Button Wrapper */
+	.tax-brands .content-wrapper.l-default .button-wrapper,
+	.single-equipment_sales .content-wrapper.l-default .button-wrapper { display: block; margin: 18px 0; }
+	/* Equipment Sales Brands: Content Wrapper: Button Wrapper: Button */
+	.tax-brands .content-wrapper.l-default .button-wrapper .button,
+	.single-equipment_sales .content-wrapper.l-default .button-wrapper .button { margin-left: 0; }
+	/* Equipment Sales Brands: Content Wrapper: Button Wrapper: Button Desktop */
+	.tax-brands .content-wrapper.l-default .button-wrapper .button-desktop,
+	.single-equipment_sales .content-wrapper.l-default .button-wrapper .button-desktop { display: block; }
+
+}
+
+
+/* Print Services
+*****************************************************************************************/
+
+/* Print Services: Page Title */
+.single-print_services .page-title { margin-bottom: 8px; background: url('img/background-print_services-mobile.jpg') 0 0 no-repeat; }
+
+/* Example Work */
+.content-wrapper.l-default.example-work  { margin-bottom: 10px; }
+
+/* Testimonials: Section */
+.content-wrapper.l-default.testimonies { width: 95.625%; /* 306 (originally 306) / 320 */ margin: 0 auto 10px; }
+/* Testimonials: H3 */
+.content-wrapper.l-default.testimonies h3 { display: block; margin-bottom: 10px; text-align: center; }
+/* Testimonials: List Items */
+.content-wrapper.l-default.testimonies .list-items { width: 100%; padding: 0; list-style-type: none; margin: 0 0 15px; text-align: center; }
+/* Testimonials: List Items: Item */
+.content-wrapper.l-default.testimonies .list-items .item { height: 125px; display: none; background: #76b3e2; color: #000; }
+/* Testimonials: List Items: First Item */
+.content-wrapper.l-default.testimonies .list-items .item:first-child { display: block; }
+/* Testimonials: List Items: Item: Paragraph */
+.content-wrapper.l-default.testimonies .list-items .item p { width: 86.928104575%; /* 266 (originally 266) / 306 */ padding: 13px 0 3px; margin: 0 auto; color: #fff; font-size: 1em; line-height: 1.5em; }
+
+
+@media only screen and (min-width : 321px) {
+
+	/* Print Services: Page Title */
+	.single-print_services .page-title { padding-left: 62.5%; /* 200 (originally 200) / 320 */; margin-bottom: 8px; background: url('img/background-print_services.jpg') 0 0 no-repeat; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover; }
+
+}
+
+
+@media only screen and (min-width : 1024px) {
+
+	/* Print Services
+	*****************************************************************************************/
+
+	/* Print Services: Content Wrapper: Button Wrapper */
+	.single-print_services .content-wrapper.l-default .button-wrapper { display: block; }
+	/* Print Services: Content Wrapper: Button Wrapper: Button Mobile */
+	.single-print_services .content-wrapper.l-default .button-wrapper .button-mobile { display: none; }
+
+	/* Testimonials: Section */
+	.content-wrapper.l-default.testimonies { width: 100%; }
+	/* Testimonials: List Items: Item */
+	.content-wrapper.l-default.testimonies .list-items .item { width: 32.556203164%; /* 391 (originally 391) / 1201 */ height: 287px; display: block; margin-right: 0.999167361%; /* 12 (originally 12) / 1201 */ float: left; font-size: .875em; /* 14px */ color: #fff; }
+	/* Testimonials: List Items: Last Item */
+	.content-wrapper.l-default.testimonies .list-items .item:last-child { margin-right: 0; }
+	/* Testimonials: List Items: Item: Paragraph */
+	.content-wrapper.l-default.testimonies .list-items .item p { width: 84.654731458%; /* 331 (originally 331) / 391 */ font-size: 1em; padding-top: 47px; }
+	/* Testimonials: List Items: Item: Paragraph */
+	.content-wrapper.l-default.testimonies .button-wrapper { display: none; }
+
+}
+
+
+/* Service & Repiar
+*****************************************************************************************/
+
+/* Service & Repiar: Page Title */
+.page-template-page-services-repair-php .page-title { margin-bottom: 30px; background: url('img/background-repair-mobile.jpg') 0 0 no-repeat; }
+
+
+@media only screen and (min-width : 321px) {
+
+	/* Service & Repiar: Page Title */
+	.page-template-page-services-repair-php .page-title { background: url('img/background-repair.jpg') 0 0 no-repeat; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover; }
+	
+}
+
+
+@media only screen and (min-width : 1024px) {
+
+	/* Service & Repiar
+	*****************************************************************************************/
+	
+	/* Service & Repiar: Button Wrapper */
+	.page-template-page-services-repair-php .content-wrapper.l-default .button-wrapper { display: block; }
+
+
+}
+
+
+/* About Us
+*****************************************************************************************/
+
+/* About Us: Page Title */
+.single-about_us .page-title { background: url('img/background-about_us-mobile.jpg') 0 0 no-repeat; }
+
+
+@media only screen and (min-width : 321px) {
+
+	/* About Us: Page Title */
+	.single-about_us .page-title { margin-bottom: 8px; background: url('img/background-about_us.jpg') 0 0 no-repeat; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover; }
+
+}
+
+
+@media only screen and (min-width : 1024px) {
+
+	/* About Us
+	*****************************************************************************************/
+
+	/* About Us: Content Wrapper: Button Wrapper */
+	.single-about_us .content-wrapper.l-default .button-wrapper { display: block; }
+}
+
+
+/* Contact Us
+*****************************************************************************************/
+
+/* Contact Us: Page Title */
+.page-template-page-contact-us-php .page-title { background: url('img/background-default-mobile.jpg') 0 0 no-repeat; }
+
+/* Contact Us: Content Wrapper */
+.page-template-page-contact-us-php .content-wrapper.l-default { width: 95.3125%; /* 305 (originally 305) / 320 */ }
+/* Contact Us: Form */
+.page-template-page-contact-us-php .wpcf7-form { padding: 6px 0 0; background: #76b3e2; }
+/* Contact Us: Heading Size 3 */
+.page-template-page-contact-us-php h3 { display: block; padding-bottom: 4px; text-align: center; }
+/* Contact Us: Content Wrapper: Paragraph */
+.page-template-page-contact-us-php .content-wrapper.l-default p { width: 100%; margin-bottom: 5px; overflow: hidden; }
+/* Contact Us: Form Label */
+.page-template-page-contact-us-php .wpcf7-label { width: 29.508196721%; /* 90 (originally 90) / 305 */ display: block; margin: 3px 0 0 8.196721311%; /* 25 (originally 25) / 305 */ float: left; color: #fff; }
+/* Contact Us: Form Label Textarea */
+.page-template-page-contact-us-php .wpcf7-label.textarea { width: 100%; margin: 0; text-align: center; }
+/* Contact Us: Form Text and Textarea */
+.page-template-page-contact-us-php .wpcf7-text,
+.page-template-page-contact-us-php .wpcf7-textarea { border: none; }
+/* Contact Us: Form Text */
+.page-template-page-contact-us-php .wpcf7-text { width: 55.081967213%; /* 168 (originally 168) / 305 */ height: 27px; padding-left: 5px; margin-right: 5.901639344%; /* 18 (originally 18) / 305 */ float: right; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+/* Contact Us: Form Textarea */
+.page-template-page-contact-us-php .wpcf7-textarea { width: 89.180327869%; /* 272 (originally 272) / 305 */ height: 99px; padding: 5px; display: block; margin: 0 auto; }
+/* Contact Us: Paragraph Submit */
+.page-template-page-contact-us-php .content-wrapper.l-default .p-submit { height: 40px; display: block; }
+/* Contact Us: Form Submit */
+.page-template-page-contact-us-php .wpcf7-submit { padding: 10px 40px; border: none; display: block; margin: 0 auto; cursor: pointer; background: #00579c; color: #fff; font-size: 1.125em; /* 18px */ line-height: 1em; font-weight: bold; }
+
+/* Contact Boxes: Contact Box */
+.content-wrapper.contact-boxes { margin-bottom: 6px; }
+/* Contact Boxes: Contact Box */
+.content-wrapper.contact-boxes .contact-box { width: 95%; /* 304 (originally 304) / 320 */ height: 168px; padding-top: 6px; border: 1px solid #ccc; display: block; margin: 6px auto 0; }
+/* Contact Boxes: Contact Box: Heading 3 */
+.content-wrapper.contact-boxes .contact-box h3 { font-size: 1.500em; /* 24px */ }
+/* Contact Boxes: Contact Box: Paragraph */
+.content-wrapper.contact-boxes .contact-box p { width: 67.434210526%; /* 205 (originally 205) / 304 */ margin-top: 6px; float: right; font-size: 1.125em; /* 18px */ line-height: 1.667em; /* 30px */ }
+/* Contact Boxes: Contact Box: Icon */
+.content-wrapper.contact-boxes .contact-box .icon { display: block; float: left; }
+/* Contact Boxes One: Icon */
+.content-wrapper.contact-boxes .contact-box.contact-one .icon { width: 46px; height: auto; margin-top: 7px; margin-left: 21px; }
+/* Contact Boxes Two: Icon */
+.content-wrapper.contact-boxes .contact-box.contact-two .icon { width: 83px; height: auto; }
+
+
+@media only screen and (min-width : 321px) {
+
+	/* Contact Us: Page Title */
+	.page-template-page-contact-us-php .page-title { background: url('img/background-default.jpg') 0 0 no-repeat; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover; margin-bottom: 16px }
+	
+}
+
+
+@media only screen and (min-width : 1024px) {
+
+	/* Contact Us
+	*****************************************************************************************/
+
+	/* Contact Us: Container */
+	.page-template-page-contact-us-php .container { width: 100%; max-width: 1200px; margin: 0 auto; overflow: hidden; }
+
+	/* Contact Us: Default Content Wrapper */
+	.page-template-page-contact-us-php .content-wrapper.l-default { width: 49.292256453%; /* 592 (originally 592) / 1201 */ float: left; }
+	/* Contact Us: Default Content Wrapper: Content */
+	.page-template-page-contact-us-php .content-wrapper.l-default .content { width: 100%; margin: 0; }
+
+	/* Contact Us: Form */
+	.page-template-page-contact-us-php .wpcf7-form { height: 577px; padding-top: 13px; }
+	/* Contact Us: Heading Size 3 */
+	.page-template-page-contact-us-php h3 { padding-bottom: 24px; }
+	/* Contact Us: Content Wrapper: Paragraph */
+	.page-template-page-contact-us-php .content-wrapper.l-default p { margin-bottom: 23px; }
+	/* Contact Us: Form Label */
+	.page-template-page-contact-us-php .wpcf7-label { width: 27.533783784%; /* 163 (originally 163) / 592 */ margin: 0 0 0 8.445945946%; /* 50 (originally 50) / 592 */ font-size: 1.250em; /* 20px */ }
+	/* Contact Us: Form Text */
+	.page-template-page-contact-us-php .wpcf7-text { height: 28px; width: 55.067567568%; /* 326 (originally 326) / 592 */ margin-right: 6.081081081%; /* 36 (originally 36) / 592 */ }
+	/* Contact Us: Form Label Textarea */
+	.page-template-page-contact-us-php .wpcf7-label.textarea { display: block; margin: 0 0 12px; }
+	/* Contact Us: Form Textarea */
+	.page-template-page-contact-us-php .wpcf7-textarea { height: 171px; display: block; background: #fff; color: #666; clear: left; }
+
+	/* Contact Us: Contact Boxes */
+	.page-template-page-contact-us-php .content-wrapper.contact-boxes { width: 49.292256453%; /* 592 (originally 592) / 1201 */ float: right; }
+	/* Contact Us: Contact Boxes: Content */
+	.page-template-page-contact-us-php .content-wrapper.contact-boxes .content { width: 100%; margin: 0; }
+	/* Contact Us: Contact Boxes: Contact Box */
+	.page-template-page-contact-us-php .content-wrapper.contact-boxes .contact-box { width: 100%; height: 287px; padding: 13px 0 0; border-width: 2px; margin: 0 0 16px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+	/* Contact Us: Contact Boxes: Contact Box: Heading 3 */
+	.page-template-page-contact-us-php .content-wrapper.contact-boxes .contact-box h3 { font-size: 2.000em; /* 32px */ }
+	/* Contact Us: Contact Boxes: Contact Box: Paragraph */
+	.page-template-page-contact-us-php .content-wrapper.contact-boxes .contact-box p { width: 53.040540541%; /* 314 (originally 314) / 592 */ margin-top: 47px; font-size: 1.250em; /* 20px */ line-height: 1.550em; }
+	/* Contact Us: Contact Boxes: Contact Box: Map It Paragraph */
+	.page-template-page-contact-us-php .content-wrapper.contact-boxes .contact-box .p-map { margin-top: 0; }
+	/* Contact Us: Contact Boxes One: Icon */
+	.page-template-page-contact-us-php .content-wrapper.contact-boxes .contact-box.contact-one .icon { width: 92px; height: 169px; margin: 10px 0 0 16.385135135%; /* 97 (originally 97) / 592 */ }
+	/* Contact Us: Contact Boxes Two: Icon */
+	.page-template-page-contact-us-php .content-wrapper.contact-boxes .contact-box.contact-two .icon { width: 167px; height: 153px; margin: 22px 0 0 9.290540541%; /* 55 (originally 55) / 592 */ }
+}
+
+
+/* Page
+*****************************************************************************************/
+
+/* Page */
+.content-wrapper.l-default { width: 90%; /* 288 (originally 288) / 320 */ margin: 0 auto; overflow: hidden; }
+/* Page: Heading Size 3 */
+.content-wrapper.l-default h3 { margin-bottom: 4px; font-size: 1.500em; /* 24px */ }
+/* Page: Heading Size 4 */
+.content-wrapper.l-default h4 { margin-bottom: 4px; font-size: 1.250em; /* 20px */ }
+/* Page: Paragraph */
+.content-wrapper.l-default p { display: block; margin-bottom: 11px; font-size: 0.875em; /* 14px */ line-height: 1.429em; color: #666; }
+/* Page: Unordered List */
+.content-wrapper.l-default ul { padding-left: 16px; list-style: disc; margin: 0 0 0 20px; text-indent: -6px; font-size: 0.875em; /* 14px */ color: #666; }
+/* Page: List Item */
+.content-wrapper.l-default li { margin-bottom: 10px; }
+/* Page: Post Image */
+.content-wrapper.l-default .post-image { display: none; }
+
+
+@media only screen and (min-width : 1024px) {
+
+	/* Page
+	*****************************************************************************************/
+	
+	/* Page */
+	.content-wrapper.l-default { width: 100%; }	
+	/* Page: Heading Size 3 */
+	.content-wrapper.l-default h3 { font-size: 2.000em; /* 32px */ }
+	/* Page: Heading Size 4 */
+	.content-wrapper.l-default h4 { font-size: 1.250em; /* 20px */ }
+	/* Page: Paragraph */
+	.content-wrapper.l-default p { font-size: 1em; /* 16px */ line-height: 1.500em; /* 24px */ }
+	/* Page: Unordered List */
+	.content-wrapper.l-default ul { margin: 0; font-size: 1em; /* 16px */ line-height: 1.500em; /* 24px */ }
+	/* Page: Section */
+	.content-wrapper.l-default .section { width: 100%; margin-bottom: 10px; overflow: hidden; }
+	/* Page: Article */
+	.content-wrapper.l-default .article { width: 46.005267779%; /* 524 (originally 524) / 1139 */ margin-left: 3.950834065%; /* 45 (originally 45) / 1139 */ float: left; }
+	/* Page: Post Image */
+	.content-wrapper.l-default .post-image { width: 46.005267779%; /* 524 (originally 524) / 1139 */ display: block; margin-left: 3.950834065%; /* 45 (originally 45) / 1139 */ float: left; }
+	
+}

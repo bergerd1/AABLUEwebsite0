@@ -1,0 +1,63 @@
+/*	Styles for Menu Popup Admin Pages
+====================================================================== */
+
+/*	Form Table for Menu Popup
+------------------------------ */
+
+.mpopup-wrapper,
+.inline-documentation {
+	min-width: 200px;
+	width: 40%;
+	display: block;
+	float: left;
+	margin: 0 24px 24px 0;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+.inline-documentation {
+	padding: 0;
+}
+
+.inline-documentation ul {
+	padding-left: 20px;
+	list-style: disc;
+}
+
+.inline-documentation li {
+	margin-bottom: 24px;
+}
+
+.mpopup-wrapper {
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 3px;
+	padding: 0 24px 0;
+}
+
+.mpopup-options li {
+	display: block;
+	padding: 0;
+	border-bottom: 1px solid #dfdfdf;
+	padding: 12px 0;
+}
+
+.mpopup-options li h3 {
+	margin-top: 0;
+}
+.mpopup-options label {
+	display: inline-block;
+	width: 130px;
+	padding: 12px 0;	
+}
+
+.mpopup-options input {
+	position: relative;
+	top: 2px;
+}
+
+.mpopup-options input.small-text {
+	width: 60px;
+	text-align: right;
+}
+
